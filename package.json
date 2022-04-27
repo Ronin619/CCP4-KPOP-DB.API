@@ -1,0 +1,28 @@
+{
+  "name": "ccp4-solo.api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronin619/CCP4-solo.API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronin619/CCP4-solo.API/issues"
+  },
+  "homepage": "https://github.com/Ronin619/CCP4-solo.API#readme",
+  "dependencies": {
+    "express": "^4.18.0",
+    "knex": "^2.0.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
