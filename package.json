@@ -8,7 +8,8 @@
     "start": "nodemon ./server.js",
     "migrate": "knex migrate:latest",
     "seed": "knex seed:run",
-    "make:migration": "knex migrate:make"
+    "make:migration": "knex migrate:make",
+    "make:seed": "knex seed:make"
   },
   "repository": {
     "type": "git",

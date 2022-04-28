@@ -5,10 +5,12 @@ const app = express();
 app.use(express.json());
 
 // TEST END POINT
-app.get("/hello", (req, res) => {
-    console.log("I am a console.log")
-    res.send("world");
-})
+app.get('/test',  async (req, res) => {
+    const result = await db('groups').select('*');
+    res.send(result);
+ })
+
+
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);

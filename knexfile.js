@@ -1,4 +1,6 @@
-require("dotenv").config();
+require("dotenv").config({
+  path: "./.env.local",
+});
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
