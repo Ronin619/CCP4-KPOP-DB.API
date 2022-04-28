@@ -1,4 +1,5 @@
 const express = require('express');
+const db = require('./db/knex.js');
 const port = process.env.PORT || 3000;
 const app = express();
 app.use(express.json());
