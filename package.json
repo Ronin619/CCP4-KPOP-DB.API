@@ -1,5 +1,5 @@
 {
-  "name": "ccp4-solo.api",
+  "name": "ccp4-kpop-db.api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ronin619/CCP4-solo.API.git"
+    "url": "git+https://github.com/Ronin619/CCP4-KPOP.DB.API.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ronin619/CCP4-solo.API/issues"
+    "url": "https://github.com/Ronin619/CCP4-KPOP.DB.API/issues"
   },
-  "homepage": "https://github.com/Ronin619/CCP4-solo.API#readme",
+  "homepage": "https://github.com/Ronin619/CCP4-KPOP-DB.API#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.18.0",
