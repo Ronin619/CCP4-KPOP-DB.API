@@ -18,14 +18,20 @@ app.get('/groups',  async (req, res) => {
     res.status(201).send(groups);
 });
 
+app.patch('/:id', async (req, res) => {
+    const id = req.params.id
+    const name = req.body
+    await db('groups').where({id: id}).update(name)
+    const groups = await db('groups').select('*')
+    res.status(201).send(groups);
+})
+
 app.delete('/:group_name', async (req, res) => {
     const body = req.body.group_name
     await db('groups').where({group_name: body}).del()
-    res.status(201).end();
+    const groups = await db('groups').select('*')
+    res.status(201).send(groups);
 })
-
-
-
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);
